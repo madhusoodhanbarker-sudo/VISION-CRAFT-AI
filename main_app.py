@@ -166,7 +166,7 @@ uploaded_file = st.file_uploader(
 
 # ---------------- IMAGE DISPLAY ----------------
 if uploaded_file:
-
+from rembg import remove
     original_image = Image.open(uploaded_file).convert("RGBA")
 
     st.markdown('<div class="section-title">🖼️ Image Preview</div>', unsafe_allow_html=True)
